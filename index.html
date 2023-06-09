@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
+</head>
+<body>
+    <canvas></canvas>
+    <svg>
+        <defs>
+            <filter id="gooey">
+                <feGaussianBlur stdDeviation="40" in="SourceGraphic" result="blur1"/>
+                <feColorMatrix in="blur1" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 100 -23"/>
+            </filter>
+        </defs>
+    </svg>
+</body>
+</html>
